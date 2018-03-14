@@ -12,13 +12,13 @@
  ****/
 
 public class QuickSortTester{
-     private long timeStart;
-     private int numTrials;
-  	 private long timeEnd;
-  	 private long totalTime;
-  	 private long averageTime;
-  	 private int[] testArray;
-     private int arrSize;
+     private static long timeStart;
+     private static int numTrials;
+     private static long timeEnd;
+     private static long totalTime;
+     private static long averageTime;
+     private static int[] testArray;
+     private static int arrSize;
 
      //return int array of size s, with each element fr range [0,maxVal)
      public static int[] buildArray( int s, int maxVal ) {
