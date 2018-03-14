@@ -31,3 +31,7 @@ L01 -- What Does the Data Say? <br />
   ![alt text](averagecase.png)
   
 ## Conclusions
+  <p> Our data appears to show that when QuickSort is run, indiscrimnate of the pivot position and size, the runtime will be O(n^2).
+  The best case of QuickSort should have been O(nlogn) because the partition divided the array into two parts at each call. 
+  The problem may have arisen from the randomness in our arrays resulting in outliers and abnormal data.
+  One improvement to our experiment would have been running multiple trials on the same array and taking the average time to reduce inconsistencies. </p>
