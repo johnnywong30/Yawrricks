@@ -6,7 +6,7 @@
 /****
 * QuickSortTester
 * Timing Mechanism
-* We will generate 500 arrays each with increments of 100.
+* For each pivot case, we will generate 500 arrays with increments of 100.
 * For each array, we will perform QuickSort and record the time elapsed in nanoseconds.
 * We will then compile all the times and divide by the number of arrays we performed QuickSort on to get the average time.
 
