@@ -79,9 +79,9 @@ public class QuickSort
 	qsortHR(d, 0, d.length - 1);
     }
 
-    public static void qsortL( int[] d)
+    public static void qsortRandom( int[] d)
     {
-	qsortHL(d, 0, d.length - 1);
+	qsortHRandom(d, 0, d.length - 1);
     }
 
     public static void qsortM( int[] d)
@@ -102,12 +102,12 @@ public class QuickSort
 	}
     }
 
-        public static void qsortHL(int[] d, int left, int right)
+        public static void qsortHRandom(int[] d, int left, int right)
     {
 	if (left < right) {
-	    int pvtPos = partition(d, left, right, left);
-	    qsortHL(d, left, pvtPos - 1);
-	    qsortHL(d, pvtPos + 1, right);
+	    int pvtPos = partition(d, left, right, (int) (Math.random() * right));
+	    qsortHRandom(d, left, pvtPos - 1);
+	    qsortHRandom(d, pvtPos + 1, right);
 	}
 	else {
 	    return ;

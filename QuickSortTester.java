@@ -54,7 +54,7 @@ public class QuickSortTester{
           // avg time for best case
           averageTime /= numTrials;
           System.out.println("average, " + averageTime);
-          // testing the worst case of leftbound as pivot
+          // testing the worst case of random index as pivot
           System.out.println("Worst case tests: ");
           System.out.println("Trial, Time");
           for (int i = 0; i < numTrials; i++){
@@ -63,7 +63,7 @@ public class QuickSortTester{
                // start time is after each array is built
                // and they are then sorted by qsort
                timeStart = System.nanoTime();
-               QuickSort.qsortL(testArray);
+               QuickSort.qsortRandom(testArray);
                // end time is after the inputted array is
                // sorted after qsort
                timeEnd = System.nanoTime();
