@@ -74,18 +74,52 @@ public class QuickSort
      * void qsort(int[])
      * @param d -- array of ints to be sorted in place
      *****************************************************/
-    public static void qsort( int[] d )
+    public static void qsortR( int[] d )
     {
-	qsortH(d, 0, d.length - 1);
+	qsortHR(d, 0, d.length - 1);
+    }
+
+    public static void qsortL( int[] d)
+    {
+	qsortHL(d, 0, d.length - 1);
+    }
+
+    public static void qsortM( int[] d)
+    {
+	qsortHM(d, 0, d.length - 1);
     }
 
     //you may need a helper method...
-    public static void qsortH(int[] d, int left, int right)
+    public static void qsortHR(int[] d, int left, int right)
     {
 	if (left < right) {
 	    int pvtPos = partition(d, left, right, right);
-	    qsortH(d, left, pvtPos - 1);
-	    qsortH(d, pvtPos + 1, right);
+	    qsortHR(d, left, pvtPos - 1);
+	    qsortHR(d, pvtPos + 1, right);
+	}
+	else {
+	    return ;
+	}
+    }
+
+        public static void qsortHL(int[] d, int left, int right)
+    {
+	if (left < right) {
+	    int pvtPos = partition(d, left, right, left);
+	    qsortHL(d, left, pvtPos - 1);
+	    qsortHL(d, pvtPos + 1, right);
+	}
+	else {
+	    return ;
+	}
+    }
+
+    public static void qsortHM(int[] d, int left, int right)
+    {
+	if (left < right) {
+	    int pvtPos = partition(d, left, right, d.length / 2);
+	    qsortHM(d, left, pvtPos - 1);
+	    qsortHM(d, pvtPos + 1, right);
 	}
 	else {
 	    return ;
