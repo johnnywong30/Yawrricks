@@ -29,8 +29,10 @@ public class QuickSortTester{
      }
 
      public static void main(String[] args) {
-          numTrials = 10000;
+          numTrials = 500;
           // testing the best case of median as pivot
+          System.out.println("Best case tests: ");
+          System.out.println("Trial, Time");
           for (int i = 0; i < numTrials; i++){
                arrSize = 1000 + (i * 100);
                testArray = buildArray(arrSize, arrSize);
@@ -47,14 +49,14 @@ public class QuickSortTester{
                // add total time to averageTime for later
                // calculation
                averageTime += totalTime;
-               System.out.println("Best case tests: ");
-               System.out.println("Trial, Time");
-               System.out.println("i, " + timeEnd);
+               System.out.println(i  + ", " + timeEnd);
           }
           // avg time for best case
           averageTime /= numTrials;
           System.out.println("average, " + averageTime);
           // testing the worst case of leftbound as pivot
+          System.out.println("Worst case tests: ");
+          System.out.println("Trial, Time");
           for (int i = 0; i < numTrials; i++){
                arrSize = 1000 + (i * 100);
                testArray = buildArray(arrSize, arrSize);
@@ -71,14 +73,14 @@ public class QuickSortTester{
                // add total time to averageTime for later
                // calculation
                averageTime += totalTime;
-               System.out.println("Worst case tests: ");
-               System.out.println("Trial, Time");
-               System.out.println("i, " + timeEnd);
+               System.out.println(i  + ", " + timeEnd);
           }
           // avg time for worst case
           averageTime /= numTrials;
           System.out.println("average, " + averageTime);
           // testing the average case of rightbound as pivot
+          System.out.println("Average case tests: ");
+          System.out.println("Trial, Time");
           for (int i = 0; i < numTrials; i++){
                arrSize = 1000 + (i * 100);
                testArray = buildArray(arrSize, arrSize);
@@ -95,9 +97,7 @@ public class QuickSortTester{
                // add total time to averageTime for later
                // calculation
                averageTime += totalTime;
-               System.out.println("Average case tests: ");
-               System.out.println("Trial, Time");
-               System.out.println("i, " + timeEnd);
+               System.out.println(i  + ", " + timeEnd);
           }
           // avg time for average case
           averageTime /= numTrials;
