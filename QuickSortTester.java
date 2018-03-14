@@ -37,7 +37,7 @@ public class QuickSortTester{
             	// start time is after each array is built
             	// and they are then sorted by qsort
               timeStart = System.nanoTime();
-              QuickSort.qsortM(buildArray);
+              QuickSort.qsortM(testArray);
             	// end time is after the inputted array is
             	// sorted after qsort
               timeEnd = System.nanoTime();
@@ -61,7 +61,7 @@ public class QuickSortTester{
             	// start time is after each array is built
             	// and they are then sorted by qsort
               timeStart = System.nanoTime();
-              QuickSort.qsortL(buildArray);
+              QuickSort.qsortL(testArray);
             	// end time is after the inputted array is
             	// sorted after qsort
               timeEnd = System.nanoTime();
@@ -85,7 +85,7 @@ public class QuickSortTester{
             	// start time is after each array is built
             	// and they are then sorted by qsort
               timeStart = System.nanoTime();
-              QuickSort.qsortR(buildArray);
+              QuickSort.qsortR(testArray);
             	// end time is after the inputted array is
             	// sorted after qsort
               timeEnd = System.nanoTime();
