@@ -29,7 +29,7 @@ public class QuickSortTester{
      }
 
      public static void main(String[] args) {
-       		numTrials = 10000
+       		numTrials = 10000;
        		// testing the best case of median as pivot
        		for (int i = 0; i < numTrials; i++){
               arrSize = 1000 + (i * 100);
