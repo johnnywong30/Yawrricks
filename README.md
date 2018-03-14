@@ -24,9 +24,9 @@ L01 -- What Does the Data Say? <br />
   
 ## Results
   Best Case: <br/>
-  ![alt text](bestcase.png)
+  ![alt text](bestcase.png)<br/>
   Worst Case: <br/>
-  ![alt text](worstcase.png)
+  ![alt text](worstcase.png)<br/>
   Average Case: <br/>
   ![alt text](averagecase.png)
   
