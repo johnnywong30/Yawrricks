@@ -6,9 +6,10 @@
 /****
 * QuickSortTester
 * Timing Mechanism
-* For each array, the time in nanoseconds of the start of the experiment will be recorded.
-* The time in nanoseconds at the end of the experiment will be recorded after performing 10000 trials of QuickSort on the array.
-* We will then take the average times of each of the experiments as our data.
+* We will generate 500 arrays each with increments of 100.
+* For each array, we will perform QuickSort and record the time elapsed in nanoseconds.
+* We will then compile all the times and divide by the number of arrays we performed QuickSort on to get the average time.
+
 ****/
 
 public class QuickSortTester{
